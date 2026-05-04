@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/images/wheather-icon.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <article class="card">
+            <section class="search-box">
+                <input type="text" placeholder="Enter city name" spellcheck="false" id="city-input">
+                <button><img src="assets/images/search-icon.png" id="search" alt="search"></button>
+            </section>
+            <p class="error"></p>
+            <section class="weather-box">
+                <img class="weather-icon" src="./assets/images/wheather-icon.png" alt="weather">
+                <h1 class="temp">35°C</h1>
+                <h3 class="desc">Rain</h3>
+                <h2 class="city">Gujrat, PK</h2>
+                <div class="details">
+                    <div class="detail">
+                        <img class="humidity-icon" src="./assets/images/humidity-icon.png" alt="humidity">
+                        <div class="d-value">
+                            <h3 id="humidity">20%</h3>
+                            <span>Humidity</span>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <img class="wind-icon" src="./assets/images/wind-icon.png" alt="humidity">
+                        <div class="d-value">
+                            <h3 id="wind">10 km/h</h3>
+                            <span>Wind Speed</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+</body>
+
+</html>
