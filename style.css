@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #9acde2, #203a43, #2c5364);
+    color: #e6f1ff;
+    height: 100vh;
+    font-family: "Varela Round", sans-serif;
+    ;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card {
+    width: 90%;
+    max-width: 400px;
+    background: linear-gradient(145deg, #1f2a38, #2b3e55);
+    border-radius: 20px;
+    margin: 100px auto;
+    padding: 40px;
+    box-shadow: 0 15px 30px #00000080;
+    text-align: center;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background: transparent;
+    color: #e6f1ff;
+    border: 1px solid #e6f1ff;
+    outline: none;
+}
+
+.search-box button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.search-box button img {
+    height: 20px;
+    transition: 0.25s;
+}
+.search-box button img:hover {
+    transform: scale(1.15) rotate(-30deg);
+}
+
+.error {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: #ff6b6b;
+}
+
+.weather-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-icon {
+    height: 150px;
+}
+
+h1,
+h2,
+h3 {
+    color: #e6f1ff;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+.details {
+    margin-top: 20px;
+    display: flex;
+    gap: 50px;
+}
+
+.detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c9d6e3;
+    gap: 10px;
+}
+
+.detail img {
+    height: 40px;
+}
+@media (max-width: 768px) {
+    .card {
+        margin: 40px 20px;
+        padding: 25px;
+    }
+
+    .search-box {
+        gap: 15px;
+    }
+
+    .search-box input {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .search-box button img {
+        height: 18px;
+    }
+
+    .weather-icon {
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 0.9rem;
+    }
+
+    .details {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .detail img {
+        height: 30px;
+    }
+}
